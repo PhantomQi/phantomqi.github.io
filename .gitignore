@@ -1,0 +1,10 @@
+*.drawio
+__pycache__
+*.log
+*.pyc
+build/
+.DS_Store
+.gradle/
+*.ipynb_checkpoints
+~$*.*
+.idea/
