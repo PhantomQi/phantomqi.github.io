@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+command="$@"
+seconds=5
+echo "insist: $command"
+while ! $command; do
+	for i in $(seq $seconds 1); do
+		echo -en "retry in $i seconds\r";
+		sleep 1;
+	done;
+	echo         "retry now: $command  ";
+done
