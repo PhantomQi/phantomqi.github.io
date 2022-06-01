@@ -6,7 +6,7 @@
 目录：
 
 - [20181114-通过permission控制应用内部的Intent广播](20181114-通过permission控制应用内部的Intent广播.md) (最近更新：2022-04-30 22:31)
-- [20190411-Gradle的动态编译能力](20190411-Gradle的动态编译能力.md) (最近更新：2022-05-29 17:04)
+- [20190411-Gradle的动态编译能力](20190411-Gradle的动态编译能力.md) (最近更新：2022-06-01 23:06)
 - [20191130-21分钟maven入门](20191130-21分钟maven入门.md) (最近更新：2022-05-29 17:04)
 - [20220503-FileProvider学习笔记](20220503-FileProvider学习笔记.md) (最近更新：2022-05-29 10:39)
 - [20220516-马上观RPC](20220516-马上观RPC.md) (最近更新：2022-05-29 17:05)
@@ -14,5 +14,5 @@
 
 -------
 
-[View on GitHub](https://github.com/PhantomQi/phantomqi.github.io) | [Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) | E-Mail: phantomqi@qq.com
+[View on GitHub](https://github.com/PhantomQi/phantomqi.github.io) \| [Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) \| [Send e-mail](mailto:phantomqi@qq.com) 
 
