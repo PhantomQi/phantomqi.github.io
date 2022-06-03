@@ -41,7 +41,7 @@ if __name__ == '__main__' :
         mtime_text = time.strftime('%Y-%m-%d %H:%M', localtime)
         print(os.path.relpath(file, rootDir), '最后更新:', mtime_text)
 
-        toc += '- [{}]({}) (最近更新：{})\n'.format(base_name, relpath, mtime_text)
+        toc += '- [{}]({}) <span style="color:#a0a0a0">(最近更新：{})</span>\n'.format(base_name, relpath, mtime_text)
 
     with open('tools/README-template.md', 'rt', encoding = 'utf-8') as f :
         template = f.read()
