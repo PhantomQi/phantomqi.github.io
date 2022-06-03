@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+source $(dirname $0)/gh-md-toc 2>&1 1>/dev/null
+
+src="$1"
+dst="/tmp/md2html/${src##*/}.html"
+mkdir -p $(dirname $dst)
+gh_toc_md2html "$src" | tee "$dst"
+
+echo ''
+echo "$dst"
+echo "file://$dst"

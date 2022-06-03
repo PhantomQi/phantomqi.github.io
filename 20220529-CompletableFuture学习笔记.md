@@ -245,7 +245,7 @@ result = stage1.thenCompose(x -> {
 2. [`handle((T, Throwable) -> U)`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#handle-java.util.function.BiFunction-)：不管是否发生异常，都会被调用，应用程序可以在这里把异常或正常完成的结果转换成另外的数据类型；
 3. [`whenComplete((T, Throwable) -> Void)`](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html#whenComplete-java.util.function.BiConsumer-)：不管是否发生异常，都会被调用，但应用程序在这里无法改变任务的执行结果或异常状态；
 
-以上三类方法，除了`exceptionally`以外，都提供了对应的异步版本。异步线程遵循[异步任务（asynchronous）](#异步任务（asynchronous）)所述规则。
+以上三类方法，除了`exceptionally`以外，都提供了对应的异步版本。异步线程遵循[异步任务（asynchronous）](#异步任务asynchronous)所述规则。
 
 ```java
 public <U> CompletableFuture<U> handleAsync(BiFunction<? super T,Throwable,? extends U> fn);
@@ -492,7 +492,7 @@ value = [A->B->C,A->D->E]->F
 
 可以得出结论：
 
-1. 正如[异步任务（asynchronous）](#异步任务（asynchronous）)一节所说，同步任务会在`complete()`所在线程同步执行；
+1. 正如[异步任务（asynchronous）](#异步任务asynchronous)一节所说，同步任务会在`complete()`所在线程同步执行；
 2. 触发任务执行的是前置任务的完成状态，而不是调用`get()`的时候，既是说任务是以“推”的形式执行，而不是“拉”的形式；
 3. `CompletableFuture`实现的执行顺序是后续深入优先遍历（这是`CompletableFuture`的内部实现细节，未来可能发生变化）；
 
