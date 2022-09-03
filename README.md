@@ -13,8 +13,7 @@
 - [20220529-CompletableFuture学习笔记](20220529-CompletableFuture学习笔记.md) <span style="color:#a0a0a0">(最近更新：2022-06-03 19:44)</span>
 - [20220902-记录若干类型在Android上序列化的方法](20220902-记录若干类型在Android上序列化的方法.md) <span style="color:#a0a0a0">(最近更新：2022-09-03 20:14)</span>
 
-
 -------
 
-[View on GitHub](https://github.com/PhantomQi/phantomqi.github.io) \| [Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) \| [Send e-mail](mailto:phantomqi@qq.com) 
+[Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) \| [Send e-mail](mailto:phantomqi@qq.com) 
 

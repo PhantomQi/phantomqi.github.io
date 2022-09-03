@@ -9,5 +9,5 @@
 
 -------
 
-[View on GitHub](https://github.com/PhantomQi/phantomqi.github.io) \| [Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) \| [Send e-mail](mailto:phantomqi@qq.com) 
+[Welcome to issues!](https://github.com/PhantomQi/phantomqi.github.io/issues) \| [Send e-mail](mailto:phantomqi@qq.com) 
 
