@@ -11,7 +11,8 @@
 - [20220503-FileProvider学习笔记](20220503-FileProvider学习笔记.md) <span style="color:#a0a0a0">(最近更新：2022-05-29 10:39)</span>
 - [20220516-马上观RPC](20220516-马上观RPC.md) <span style="color:#a0a0a0">(最近更新：2022-05-29 17:05)</span>
 - [20220529-CompletableFuture学习笔记](20220529-CompletableFuture学习笔记.md) <span style="color:#a0a0a0">(最近更新：2022-06-03 19:44)</span>
-- [20220902-记录若干类型在Android上序列化的方法](20220902-记录若干类型在Android上序列化的方法.md) <span style="color:#a0a0a0">(最近更新：2022-09-03 20:14)</span>
+- [20220902-记录若干类型在Android上序列化的方法](20220902-记录若干类型在Android上序列化的方法.md) <span style="color:#a0a0a0">(最近更新：2022-09-03 20:18)</span>
+
 
 -------
 
