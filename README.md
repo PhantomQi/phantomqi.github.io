@@ -12,6 +12,7 @@
 - [20220516-马上观RPC](20220516-马上观RPC.md) <span style="color:#a0a0a0">(最近更新：2022-05-29 17:05)</span>
 - [20220529-CompletableFuture学习笔记](20220529-CompletableFuture学习笔记.md) <span style="color:#a0a0a0">(最近更新：2022-06-03 19:44)</span>
 - [20220902-记录若干类型在Android上序列化的方法](20220902-记录若干类型在Android上序列化的方法.md) <span style="color:#a0a0a0">(最近更新：2022-09-04 17:53)</span>
+- [20220908-Java依赖分析学习小结](20220908-Java依赖分析学习小结.md) <span style="color:#a0a0a0">(最近更新：2022-09-11 11:21)</span>
 
 
 -------
