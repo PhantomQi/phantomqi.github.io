@@ -63,6 +63,7 @@ gh_toc_md2html() {
             TOKEN="$(cat $TOKEN_FILE)"
         fi
     fi
+    echo "TOKEN=${TOKEN}"
     if [ ! -z "${TOKEN}" ]; then
         AUTHORIZATION="Authorization: token ${TOKEN}"
     fi
@@ -138,6 +139,7 @@ gh_toc(){
 
     fi
 
+    # echo "$(gh_is_url "$gh_src")"
     if [ "$(gh_is_url "$gh_src")" == "yes" ]; then
         gh_toc_load "$gh_src" | gh_toc_grab "$gh_src_copy" "$indent"
         if [ "${PIPESTATUS[0]}" != "0" ]; then
@@ -153,6 +155,7 @@ gh_toc(){
         fi
     else
         local rawhtml=$(gh_toc_md2html "$gh_src" "$skip_header")
+        # echo "$rawhtml"
         if [ "$rawhtml" == "XXNetworkErrorXX" ]; then
              echo "Parsing local markdown file requires access to github API"
              echo "Please make sure curl is installed and check your network connectivity"
@@ -249,9 +252,15 @@ gh_toc_grab() {
     else
         grepcmd="grep -Eo"
         echoargs="-e"
+        # awkscript='{
+        #              level = substr($0, length($0), 1)
+        #              text = substr($0, match($0, /a>.*<\/h/)+2, RLENGTH-5)
+        #              href = substr($0, match($0, "href=\"[^\"]+?\"")+6, RLENGTH-7)
+        #              '"$common_awk_script"'
+        #         }'
         awkscript='{
                      level = substr($0, length($0), 1)
-                     text = substr($0, match($0, /a>.*<\/h/)+2, RLENGTH-5)
+                     text = substr($0, match($0, />[^<>]*?</)+1, RLENGTH-2)
                      href = substr($0, match($0, "href=\"[^\"]+?\"")+6, RLENGTH-7)
                      '"$common_awk_script"'
                 }'
@@ -266,7 +275,8 @@ gh_toc_grab() {
     sed -e ':a' -e 'N' -e '$!ba' -e 's/\n<\/h/<\/h/g' |
 
     # find strings that corresponds to template
-    $grepcmd '<a.*id="user-content-[^"]*".*</h[1-6]' |
+    # $grepcmd '<a.*id="user-content-[^"]*".*</h[1-6]' |
+    $grepcmd '<a.*class="heading-link".*</h[1-6]' |
 
     # remove code tags
     sed 's/<code>//g' | sed 's/<\/code>//g' |
